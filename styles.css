@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+/* html{
+    font-size: 82.5%;
+    overflow-x: hidden;
+
+}     */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* Add these styles for the square-shaped image in the home section */
+.home-content {
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding-top:5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* Set a maximum height for the image */
+    border-radius: 5px; /* Add border-radius for a rounded look */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a subtle shadow */
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    /* padding: 10px;
+    text-align: center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    /* background: transparent; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+    
+}
+.navbar a  {
+    /* font-size: 82.5%; */
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-left: 3.5rem;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 1s;
+}
+
+main {
+    /* max-width: 800px;
+    margin: 20px auto;
+    padding: 20px; */
+    background-color: #111; /* Darker background within main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+h1, h2, h3 {
+    color: #fff;
+}
+.software{
+    color:#6674cc;
+}
+
+
+.course {
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.course-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.course-image-container {
+    flex: 1;
+    text-align:center;
+    padding-bottom: 5rem;
+    
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* Set a maximum height for the course images */
+    border-radius: 5px; /* Add border-radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Remove white border from courses */
+.course-info h3,
+.course-info p {
+    margin: 0;
+}
+
+.web{
+    text-align: center;
+}
+
+.btn{
+    border: .1rem solid;
+    background:#6674cc;
+    border-radius: .5rem;
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    width: 4.5rem;
+    height: 2rem;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for modal */
+}
+
+.modal-content {
+    background-color: #111; /* Darker background for modal content */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #555;
+    width: 80%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
